@@ -1,14 +1,8 @@
-public class StopButtonInterceptor implements Interceptor{
+// 4. Specify the Interceptors
 
-        private CdPlayer cdPlayer;
-
-  public StopButtonInterceptor(CdPlayer cdPlayer) {
-        this.cdPlayer = cdPlayer;
+class StopButtonInterceptor implements Interceptor {
+    @Override
+    public void intercept() {
+        System.out.println("Stop button interceptor activated");
     }
-
-        public void intercept() {
-        System.out.println("Performing action before stop button is pushed");
-        cdPlayer.stopButtonPushed();
-    }
-    }
-
+}
