@@ -1,4 +1,3 @@
-// 4. Specify the Interceptors
 
 class PlayButtonInterceptor implements Interceptor {
 

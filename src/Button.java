@@ -1,4 +1,3 @@
-// 3. Specify the Context Objects
 
 public class Button  {
     public void push() {

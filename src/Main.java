@@ -13,10 +13,16 @@ public class Main {
         dispatcher.addInterceptor(stopInterceptor);
 
         cdPlayer.playButtonPushed();
+        cdPlayer.stopButtonPushed();
+
         System.out.println();
+        System.out.println("after the playInterceptor has been removed from the interceptor list, the output is below");
+        System.out.println();
+
 
         dispatcher.remove(playInterceptor);
 
+        cdPlayer.playButtonPushed();
         cdPlayer.stopButtonPushed();
 
         System.out.println();
